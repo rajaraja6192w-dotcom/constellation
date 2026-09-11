@@ -18,7 +18,7 @@ from database import get_user_data, activate_premium, claim_monthly_premium_rewa
 # Import commands individually
 from commands.start import start_command
 from commands.premium import premium_command
-from commands.shop import shop_command, buy_command
+from commands.shop import buy_command
 from commands.leaderboard import leaderboard_command
 from commands.achievement import achievement_command
 from commands.quest import quest_command
