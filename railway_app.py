@@ -30,7 +30,6 @@ from commands.discard import discard_command, autodiscard_command
 from commands.use_potion import use_potion_command
 
 from handlers.callbacks import button_callback
-from handlers.server_callbacks import server_button_handler
 
 # Configure logging
 logging.basicConfig(
