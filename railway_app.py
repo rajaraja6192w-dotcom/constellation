@@ -16,17 +16,17 @@ from config import BOT_TOKEN
 from database import get_user_data, activate_premium, claim_monthly_premium_rewards
 
 # Import commands individually
-from commands.start import start, stats, inventory, roll
+from commands.start import start_command
 from commands.premium import premium_command
 from commands.shop import shop_command, buy_command
 from commands.leaderboard import leaderboard_command
 from commands.achievement import achievement_command
 from commands.quest import quest_command
 from commands.help import help_command
-from commands.server import server_command
+from commands.server import play_command, changeserver_command, server_info_command
 from commands.craft import craft_command
-from commands.equip import equip_command
-from commands.discard import discard_command
+from commands.equip import equip_light_command, equip_gear_command, unequip_gear_command
+from commands.discard import discard_command, autodiscard_command
 from commands.use_potion import use_potion_command
 
 from handlers.callbacks import button_handler
@@ -229,23 +229,25 @@ def run_bot():
         telegram_app = Application.builder().token(BOT_TOKEN).build()
         bot_instance = telegram_app.bot
         
-        # Register command handlers
-        telegram_app.add_handler(CommandHandler("start", start))
-        telegram_app.add_handler(CommandHandler("stats", stats))
-        telegram_app.add_handler(CommandHandler("inventory", inventory))
-        telegram_app.add_handler(CommandHandler("roll", roll))
+        # Register command handlers (matching main.py exactly)
+        telegram_app.add_handler(CommandHandler("start", start_command))
+        telegram_app.add_handler(CommandHandler("roll", start_command))  # roll uses start_command
+        telegram_app.add_handler(CommandHandler("help", help_command))
         telegram_app.add_handler(CommandHandler("premium", premium_command))
-        telegram_app.add_handler(CommandHandler("shop", shop_command))
+        telegram_app.add_handler(CommandHandler("craft", craft_command))
+        telegram_app.add_handler(CommandHandler("equip_light", equip_light_command))
+        telegram_app.add_handler(CommandHandler("equip_gear", equip_gear_command))
+        telegram_app.add_handler(CommandHandler("unequip_gear", unequip_gear_command))
+        telegram_app.add_handler(CommandHandler("use", use_potion_command))
         telegram_app.add_handler(CommandHandler("buy", buy_command))
         telegram_app.add_handler(CommandHandler("leaderboard", leaderboard_command))
         telegram_app.add_handler(CommandHandler("achievement", achievement_command))
         telegram_app.add_handler(CommandHandler("quest", quest_command))
-        telegram_app.add_handler(CommandHandler("help", help_command))
-        telegram_app.add_handler(CommandHandler("server", server_command))
-        telegram_app.add_handler(CommandHandler("craft", craft_command))
-        telegram_app.add_handler(CommandHandler("equip", equip_command))
         telegram_app.add_handler(CommandHandler("discard", discard_command))
-        telegram_app.add_handler(CommandHandler("use_potion", use_potion_command))
+        telegram_app.add_handler(CommandHandler("autodiscard", autodiscard_command))
+        telegram_app.add_handler(CommandHandler("play", play_command))
+        telegram_app.add_handler(CommandHandler("changeserver", changeserver_command))
+        telegram_app.add_handler(CommandHandler("serverinfo", server_info_command))
         
         # Register callback handlers
         telegram_app.add_handler(CallbackQueryHandler(button_handler, pattern=r'^(action|craft|inv|gear|toggle|roll|buy|use|view|renew)'))
