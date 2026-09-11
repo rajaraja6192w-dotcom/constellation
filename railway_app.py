@@ -15,20 +15,21 @@ from telegram.ext import Application, CommandHandler, CallbackQueryHandler, Mess
 from config import BOT_TOKEN
 from database import get_user_data, activate_premium, claim_monthly_premium_rewards
 
-# Import commands individually
+# Import commands individually (MATCHING main.py EXACTLY)
 from commands.start import start_command
-from commands.premium import premium_command
+from commands.craft import craft_command
+from commands.equip import equip_light_command, equip_gear_command, unequip_gear_command
+from commands.use_potion import use_potion_command
 from commands.shop import buy_command
 from commands.leaderboard import leaderboard_command
 from commands.achievement import achievement_command
 from commands.quest import quest_command
-from commands.help import help_command
-from commands.server import play_command, changeserver_command, server_info_command
-from commands.craft import craft_command
-from commands.equip import equip_light_command, equip_gear_command, unequip_gear_command
 from commands.discard import discard_command, autodiscard_command
-from commands.use_potion import use_potion_command
+from commands.server import play_command, changeserver_command, server_info_command
+from commands.help import help_command
+from commands.premium import premium_command
 
+# Import callback handler (MATCHING main.py EXACTLY)
 from handlers.callbacks import button_callback
 
 # Configure logging
@@ -248,9 +249,8 @@ def run_bot():
         telegram_app.add_handler(CommandHandler("changeserver", changeserver_command))
         telegram_app.add_handler(CommandHandler("serverinfo", server_info_command))
         
-        # Register callback handlers
-        telegram_app.add_handler(CallbackQueryHandler(button_handler, pattern=r'^(action|craft|inv|gear|toggle|roll|buy|use|view|renew)'))
-        telegram_app.add_handler(CallbackQueryHandler(server_button_handler, pattern=r'^server_'))
+        # Register callback handler (MATCHING main.py EXACTLY)
+        telegram_app.add_handler(CallbackQueryHandler(button_callback))
         
         logger.info("🤖 Bot started successfully!")
         
@@ -261,6 +261,12 @@ def run_bot():
         logger.error(f"Error starting bot: {e}")
         import traceback
         traceback.print_exc()
+
+# Start bot thread immediately when module loads (for Gunicorn)
+logger.info("🚀 Initializing bot thread...")
+bot_thread = Thread(target=run_bot, daemon=True)
+bot_thread.start()
+logger.info("✅ Bot thread started!")
 
 if __name__ == '__main__':
     # Start bot in background thread
