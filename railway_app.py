@@ -225,6 +225,10 @@ def run_bot():
     global bot_instance, telegram_app
     
     try:
+        # Create new event loop for this thread
+        loop = asyncio.new_event_loop()
+        asyncio.set_event_loop(loop)
+        
         # Create application
         telegram_app = Application.builder().token(BOT_TOKEN).build()
         bot_instance = telegram_app.bot
@@ -254,8 +258,8 @@ def run_bot():
         
         logger.info("🤖 Bot started successfully!")
         
-        # Run polling
-        telegram_app.run_polling(allowed_updates=Update.ALL_TYPES)
+        # Run polling in this thread's event loop
+        loop.run_until_complete(telegram_app.run_polling(allowed_updates=Update.ALL_TYPES, stop_signals=[]))
         
     except Exception as e:
         logger.error(f"Error starting bot: {e}")
