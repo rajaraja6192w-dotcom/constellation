@@ -1,0 +1,135 @@
+{
+  "quest_pool": {
+    "roll_quests": [
+      {
+        "id": "roll_50",
+        "name": "Active Roller",
+        "description": "Make 50 rolls today",
+        "icon": "🎲",
+        "requirement": {"type": "daily_rolls", "value": 50},
+        "reward": {"coins": [1000, 2000], "potions": {"luck_potion_1": 5}}
+      },
+      {
+        "id": "roll_100",
+        "name": "Roll Streak",
+        "description": "Make 100 rolls today",
+        "icon": "🎯",
+        "requirement": {"type": "daily_rolls", "value": 100},
+        "reward": {"coins": [1500, 2000], "potions": {"luck_potion_2": 2}}
+      },
+      {
+        "id": "roll_200",
+        "name": "Roll Marathon",
+        "description": "Make 200 rolls today",
+        "icon": "⚡",
+        "requirement": {"type": "daily_rolls", "value": 200},
+        "reward": {"coins": [1800, 2000], "potions": {"luck_potion_2": 3}}
+      }
+    ],
+    "level_quests": [
+      {
+        "id": "level_up_1",
+        "name": "Growth",
+        "description": "Level up once today",
+        "icon": "📈",
+        "requirement": {"type": "daily_levels", "value": 1},
+        "reward": {"coins": [1000, 1500], "potions": {"luck_potion_1": 5}}
+      },
+      {
+        "id": "level_up_3",
+        "name": "Rapid Growth",
+        "description": "Level up 3 times today",
+        "icon": "🚀",
+        "requirement": {"type": "daily_levels", "value": 3},
+        "reward": {"coins": [1500, 2000], "potions": {"luck_potion_2": 2}}
+      },
+      {
+        "id": "level_up_5",
+        "name": "Power Leveling",
+        "description": "Level up 5 times today",
+        "icon": "💫",
+        "requirement": {"type": "daily_levels", "value": 5},
+        "reward": {"coins": [1800, 2000], "potions": {"luck_potion_2": 3}}
+      }
+    ],
+    "playtime_quests": [
+      {
+        "id": "playtime_30",
+        "name": "Quick Session",
+        "description": "Play for 30 minutes today",
+        "icon": "⏰",
+        "requirement": {"type": "daily_playtime", "value": 1800},
+        "reward": {"coins": [1000, 1500], "potions": {"luck_potion_1": 5}}
+      },
+      {
+        "id": "playtime_60",
+        "name": "Long Session",
+        "description": "Play for 1 hour today",
+        "icon": "⏳",
+        "requirement": {"type": "daily_playtime", "value": 3600},
+        "reward": {"coins": [1500, 2000], "potions": {"luck_potion_2": 2}}
+      },
+      {
+        "id": "playtime_120",
+        "name": "Dedicated Player",
+        "description": "Play for 2 hours today",
+        "icon": "🕐",
+        "requirement": {"type": "daily_playtime", "value": 7200},
+        "reward": {"coins": [1800, 2000], "potions": {"luck_potion_2": 3}}
+      }
+    ],
+    "craft_quests": [
+      {
+        "id": "craft_1",
+        "name": "Daily Craft",
+        "description": "Craft 1 gear today",
+        "icon": "🔨",
+        "requirement": {"type": "daily_crafts", "value": 1},
+        "reward": {"coins": [1000, 1500], "potions": {"luck_potion_1": 5}}
+      },
+      {
+        "id": "craft_3",
+        "name": "Crafting Spree",
+        "description": "Craft 3 gears today",
+        "icon": "⚒️",
+        "requirement": {"type": "daily_crafts", "value": 3},
+        "reward": {"coins": [1500, 2000], "potions": {"luck_potion_2": 2}}
+      }
+    ],
+    "rare_quests": [
+      {
+        "id": "get_rare_1000",
+        "name": "Rare Find",
+        "description": "Get a light rarer than 1 in 1,000 today",
+        "icon": "💎",
+        "requirement": {"type": "daily_rare_light", "value": 1000},
+        "reward": {"coins": [1500, 2000], "potions": {"luck_potion_2": 3}}
+      },
+      {
+        "id": "use_potion_3",
+        "name": "Potion User",
+        "description": "Use 3 potions today",
+        "icon": "🧪",
+        "requirement": {"type": "daily_potions_used", "value": 3},
+        "reward": {"coins": [1000, 1500], "potions": {"luck_potion_1": 5}}
+      }
+    ]
+  },
+  "completion_reward": {
+    "description": "Complete all 4 daily quests",
+    "reward": {
+      "coins": [7000, 10000],
+      "potions": {
+        "luck_potion_2": 15,
+        "luck_potion_3": 5
+      },
+      "effect": {
+        "name": "Daily Blessing",
+        "icon": "✨",
+        "type": "daily_blessing",
+        "amount": 100,
+        "duration": 86400
+      }
+    }
+  }
+}

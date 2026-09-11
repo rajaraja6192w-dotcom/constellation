@@ -1,0 +1,52 @@
+{
+  "gears": {
+    "Lucky Glove": {
+      "tier": 1,
+      "icon": "🌿",
+      "stats": {"luck": 0.3},
+      "recipe": {"Common": 30, "Uncommon": 10}
+    },
+    "Red Gauntlet": {
+      "tier": 1,
+      "icon": "🍁",
+      "stats": {"luck": 0.4},
+      "recipe": {"Common": 40, "Uncommon": 15}
+    },
+    "Clover Glove": {
+      "tier": 1,
+      "icon": "🍀",
+      "stats": {"luck": 0.5},
+      "recipe": {"Common": 50, "Uncommon": 20}
+    },
+    "Jackpot Gauntlet": {
+      "tier": 1,
+      "icon": "🎰",
+      "stats": {"luck": 0.7},
+      "recipe": {"Common": 30, "Uncommon": 30, "Rare": 10}
+    },
+    "Charm Glove": {
+      "tier": 2,
+      "icon": "🔅",
+      "stats": {"luck": 1.2},
+      "recipe": {"Uncommon": 50, "Rare": 20, "Epic": 5}
+    },
+    "Superian": {
+      "tier": 2,
+      "icon": "🔆",
+      "stats": {"luck": 1.5},
+      "recipe": {"Rare": 40, "Epic": 15, "Legendary": 3}
+    },
+    "Fury Bracer": {
+      "tier": 3,
+      "icon": "❗",
+      "stats": {"luck": 2.5},
+      "recipe": {"Epic": 30, "Legendary": 10, "Mythical": 5, "Divine": 2}
+    },
+    "Purple Gloves: Magical": {
+      "tier": 4,
+      "icon": "🧤",
+      "stats": {"luck": 4.5},
+      "recipe": {"Epic": 70, "Legendary": 40, "Mythical": 50, "Divine": 20, "Wizard": 2}
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "basic": {
+    "name": "Constellation | Basic",
+    "price_usd": 1.99,
+    "duration_days": 30,
+    "benefits": {
+      "auto_roll_permanent": true,
+      "monthly_coins": 100000,
+      "monthly_luck_potions": 150,
+      "luck_boost_percent": 250,
+      "coins_multiplier": 2.0,
+      "exp_multiplier": 2.0,
+      "title": "🌟 Basic Premium"
+    },
+    "description": "Perfect for casual players who want steady progression",
+    "icon": "🌟"
+  },
+  "pro": {
+    "name": "Constellation | Pro",
+    "price_usd": 3.99,
+    "duration_days": 30,
+    "benefits": {
+      "auto_roll_permanent": true,
+      "monthly_coins": 200000,
+      "monthly_luck_potions": 300,
+      "luck_boost_percent": 500,
+      "coins_multiplier": 2.0,
+      "exp_multiplier": 2.0,
+      "exclusive_lights": true,
+      "exclusive_lights_count": 2,
+      "light_preview_access": true,
+      "shop_discount_percent": 30,
+      "title": "⭐ Pro Premium"
+    },
+    "description": "For serious players who want the best advantages - 2x ALL Basic rewards!",
+    "icon": "⭐"
+  }
+}

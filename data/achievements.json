@@ -1,0 +1,225 @@
+{
+  "achievements": {
+    "page_1": {
+      "title": "🎮 Gameplay Milestones",
+      "achievements": {
+        "first_roll": {
+          "name": "First Steps",
+          "icon": "🎲",
+          "description": "Make your first roll",
+          "requirement": {"type": "total_rolls", "value": 1},
+          "reward": {"coins": 100, "potions": {"luck_potion_1": 5}}
+        },
+        "rolls_100": {
+          "name": "Getting Started",
+          "icon": "🎯",
+          "description": "Make 100 rolls",
+          "requirement": {"type": "total_rolls", "value": 100},
+          "reward": {"coins": 500, "potions": {"luck_potion_1": 10}}
+        },
+        "rolls_1000": {
+          "name": "Dedicated Roller",
+          "icon": "🎰",
+          "description": "Make 1,000 rolls",
+          "requirement": {"type": "total_rolls", "value": 1000},
+          "reward": {"coins": 2000, "potions": {"luck_potion_2": 10}}
+        },
+        "rolls_5000": {
+          "name": "Rolling Thunder",
+          "icon": "⚡",
+          "description": "Make 5,000 rolls",
+          "requirement": {"type": "total_rolls", "value": 5000},
+          "reward": {"coins": 5000, "potions": {"luck_potion_2": 20, "luck_potion_3": 5}}
+        },
+        "rolls_10000": {
+          "name": "Roll Master",
+          "icon": "👑",
+          "description": "Make 10,000 rolls",
+          "requirement": {"type": "total_rolls", "value": 10000},
+          "reward": {"coins": 10000, "potions": {"luck_potion_3": 10, "angelic_potion": 1}}
+        },
+        "playtime_60": {
+          "name": "First Hour",
+          "icon": "⏰",
+          "description": "Play for 60 minutes total",
+          "requirement": {"type": "playtime", "value": 3600},
+          "reward": {"coins": 300, "potions": {"luck_potion_1": 5}}
+        },
+        "playtime_600": {
+          "name": "Time Invested",
+          "icon": "⏳",
+          "description": "Play for 10 hours total",
+          "requirement": {"type": "playtime", "value": 36000},
+          "reward": {"coins": 3000, "potions": {"luck_potion_2": 10}}
+        },
+        "playtime_3600": {
+          "name": "Veteran Player",
+          "icon": "🏆",
+          "description": "Play for 60 hours total",
+          "requirement": {"type": "playtime", "value": 216000},
+          "reward": {"coins": 15000, "potions": {"luck_potion_3": 15, "angelic_potion": 2}}
+        }
+      }
+    },
+    "page_2": {
+      "title": "💎 Rarity Hunter",
+      "achievements": {
+        "rare_1000": {
+          "name": "Rare Collector",
+          "icon": "💠",
+          "description": "Obtain a light rarer than 1 in 1,000",
+          "requirement": {"type": "rarest_light", "value": 1000},
+          "reward": {"coins": 1000, "potions": {"luck_potion_2": 5}}
+        },
+        "rare_10000": {
+          "name": "Super Rare Hunter",
+          "icon": "🔷",
+          "description": "Obtain a light rarer than 1 in 10,000",
+          "requirement": {"type": "rarest_light", "value": 10000},
+          "reward": {"coins": 3000, "potions": {"luck_potion_2": 10, "luck_potion_3": 3}}
+        },
+        "rare_100000": {
+          "name": "Ultra Rare Finder",
+          "icon": "💎",
+          "description": "Obtain a light rarer than 1 in 100,000",
+          "requirement": {"type": "rarest_light", "value": 100000},
+          "reward": {"coins": 10000, "potions": {"luck_potion_3": 10, "angelic_potion": 2}}
+        },
+        "rare_1000000": {
+          "name": "Mythic Seeker",
+          "icon": "🌟",
+          "description": "Obtain a light rarer than 1 in 1,000,000",
+          "requirement": {"type": "rarest_light", "value": 1000000},
+          "reward": {"coins": 50000, "potions": {"luck_potion_3": 25, "angelic_potion": 5}}
+        },
+        "rare_10000000": {
+          "name": "Legend of Luck",
+          "icon": "✨",
+          "description": "Obtain a light rarer than 1 in 10,000,000",
+          "requirement": {"type": "rarest_light", "value": 10000000},
+          "reward": {"coins": 100000, "potions": {"luck_potion_3": 50, "angelic_potion": 10}}
+        }
+      }
+    },
+    "page_3": {
+      "title": "📈 Level & Wealth",
+      "achievements": {
+        "level_10": {
+          "name": "Novice",
+          "icon": "🎖️",
+          "description": "Reach Level 10",
+          "requirement": {"type": "level", "value": 10},
+          "reward": {"coins": 500, "potions": {"luck_potion_1": 10}}
+        },
+        "level_50": {
+          "name": "Adept",
+          "icon": "🥈",
+          "description": "Reach Level 50",
+          "requirement": {"type": "level", "value": 50},
+          "reward": {"coins": 2500, "potions": {"luck_potion_2": 15}}
+        },
+        "level_100": {
+          "name": "Expert",
+          "icon": "🥇",
+          "description": "Reach Level 100",
+          "requirement": {"type": "level", "value": 100},
+          "reward": {"coins": 5000, "potions": {"luck_potion_3": 10, "angelic_potion": 1}}
+        },
+        "level_200": {
+          "name": "Master",
+          "icon": "💫",
+          "description": "Reach Level 200",
+          "requirement": {"type": "level", "value": 200},
+          "reward": {"coins": 10000, "potions": {"luck_potion_3": 20, "angelic_potion": 3}}
+        },
+        "level_500": {
+          "name": "Grandmaster",
+          "icon": "⭐",
+          "description": "Reach Level 500",
+          "requirement": {"type": "level", "value": 500},
+          "reward": {"coins": 25000, "potions": {"luck_potion_3": 50, "angelic_potion": 10}}
+        },
+        "level_1000": {
+          "name": "Constellation Legend",
+          "icon": "🌌",
+          "description": "Reach Level 1,000",
+          "requirement": {"type": "level", "value": 1000},
+          "reward": {"coins": 100000, "potions": {"luck_potion_3": 100, "angelic_potion": 25}}
+        },
+        "coins_10000": {
+          "name": "Wealthy",
+          "icon": "💰",
+          "description": "Have 10,000 coins",
+          "requirement": {"type": "coins", "value": 10000},
+          "reward": {"coins": 1000, "potions": {"luck_potion_2": 5}}
+        },
+        "coins_100000": {
+          "name": "Rich",
+          "icon": "💸",
+          "description": "Have 100,000 coins",
+          "requirement": {"type": "coins", "value": 100000},
+          "reward": {"coins": 10000, "potions": {"luck_potion_3": 10}}
+        }
+      }
+    },
+    "page_4": {
+      "title": "🏅 Special Achievements",
+      "achievements": {
+        "craft_first": {
+          "name": "Apprentice Crafter",
+          "icon": "🔨",
+          "description": "Craft your first gear",
+          "requirement": {"type": "gears_crafted", "value": 1},
+          "reward": {"coins": 500, "potions": {"luck_potion_1": 10}}
+        },
+        "craft_all": {
+          "name": "Master Craftsman",
+          "icon": "⚒️",
+          "description": "Craft all 5 types of gears",
+          "requirement": {"type": "unique_gears_crafted", "value": 5},
+          "reward": {"coins": 5000, "potions": {"luck_potion_3": 10, "angelic_potion": 2}}
+        },
+        "use_potion_50": {
+          "name": "Potion Enthusiast",
+          "icon": "🧪",
+          "description": "Use 50 potions",
+          "requirement": {"type": "potions_used", "value": 50},
+          "reward": {"coins": 2000, "potions": {"luck_potion_2": 10}}
+        },
+        "buy_potion_25": {
+          "name": "Shop Regular",
+          "icon": "🏪",
+          "description": "Buy 25 potions from shop",
+          "requirement": {"type": "potions_bought", "value": 25},
+          "reward": {"coins": 3000, "potions": {"luck_potion_3": 5}}
+        },
+        "inventory_full": {
+          "name": "Hoarder",
+          "icon": "📦",
+          "description": "Fill your light inventory (120/120)",
+          "requirement": {"type": "inventory_full", "value": 1},
+          "reward": {"coins": 1000, "potions": {"luck_potion_2": 5}}
+        },
+        "all_lights": {
+          "name": "Light Collector",
+          "icon": "🌈",
+          "description": "Obtain at least 1 of each light type",
+          "requirement": {"type": "unique_lights", "value": 52},
+          "reward": {"coins": 20000, "potions": {"luck_potion_3": 25, "angelic_potion": 5}}
+        }
+      }
+    },
+    "page_5": {
+      "title": "🏆 Ultimate Challenge",
+      "achievements": {
+        "progress_100": {
+          "name": "Constellation Master",
+          "icon": "🔮",
+          "description": "Complete 100% of all achievements (requires 10,000 rolls minimum)",
+          "requirement": {"type": "achievement_progress", "value": 100, "min_rolls": 10000},
+          "reward": {"coins": 500000, "potions": {"blue_potion": 1}}
+        }
+      }
+    }
+  }
+}

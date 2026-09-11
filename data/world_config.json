@@ -1,0 +1,151 @@
+{
+  "weather_types": {
+    "Rainy": {
+      "icon": "🌧️",
+      "luck_bonus": 10,
+      "chance": 0.1667,
+      "description": "Rain falls gently..."
+    },
+    "Sunny": {
+      "icon": "☀️",
+      "luck_bonus": 10,
+      "chance": 0.1667,
+      "description": "The sun shines bright..."
+    },
+    "Windy": {
+      "icon": "💨",
+      "luck_bonus": 10,
+      "chance": 0.1667,
+      "description": "Strong winds blow..."
+    },
+    "Foggy": {
+      "icon": "🌫️",
+      "luck_bonus": 20,
+      "chance": 0.1667,
+      "description": "Thick fog obscures the path..."
+    },
+    "Cloudy": {
+      "icon": "☁️",
+      "luck_bonus": 20,
+      "chance": 0.1667,
+      "description": "Clouds cover the sky..."
+    },
+    "Lightning": {
+      "icon": "⚡",
+      "luck_bonus": 35,
+      "chance": 0.1667,
+      "description": "Lightning strikes across the sky..."
+    }
+  },
+  "event_types": {
+    "Normal": {
+      "icon": "🌍",
+      "luck_bonus": 25,
+      "chance": 0.70,
+      "description": "A peaceful day in the constellation...",
+      "special_effects": []
+    },
+    "Eclipse": {
+      "icon": "🌔",
+      "luck_bonus": 50,
+      "chance": 0.15,
+      "description": "The moon covers the sun! Eclipse light appears!",
+      "special_effects": ["eclipse_light_unlock"]
+    },
+    "Meteor Fall": {
+      "icon": "☄️",
+      "luck_bonus": 100,
+      "chance": 0.10,
+      "description": "Meteors rain from the sky!",
+      "special_effects": [
+        {
+          "type": "meteorite_boost",
+          "multiplier": 15,
+          "description": "15x higher chance for Meteorite"
+        },
+        {
+          "type": "burnt_effect",
+          "luck_bonus": 50,
+          "chance": 0.01,
+          "description": "1% chance to gain Burnt effect (+50% luck)"
+        }
+      ]
+    },
+    "Thunder Wrath": {
+      "icon": "⚡🌩️",
+      "luck_bonus": 300,
+      "chance": 0.04,
+      "description": "The gods are angry! Thunder shakes the world!",
+      "special_effects": []
+    },
+    "None": {
+      "icon": "🌌",
+      "luck_bonus": 1500,
+      "chance": 0.01,
+      "description": "The void opens... reality itself bends...",
+      "special_effects": [
+        {
+          "type": "anomaly_chance",
+          "chance": 0.05,
+          "description": "5% chance to get Anomaly from any roll"
+        }
+      ]
+    },
+    "Heaven Approach": {
+      "icon": "✨👼",
+      "luck_bonus": 2000,
+      "chance": 0.005,
+      "description": "Heaven's gate opens! Divine presence fills the air!",
+      "special_effects": [
+        {
+          "type": "divine_blessing",
+          "luck_bonus": 150,
+          "description": "Massive luck boost for all rarities"
+        },
+        {
+          "type": "exclusive_light_chance",
+          "chance": 0.15,
+          "description": "15% chance to get Exclusive Lights (Pro only)"
+        }
+      ]
+    },
+    "Poseidon Fury": {
+      "icon": "🌊🔱",
+      "luck_bonus": 800,
+      "chance": 0.02,
+      "description": "The ocean god awakens! Tidal waves crash down!",
+      "special_effects": [
+        {
+          "type": "poseidon_light_unlock",
+          "description": "Kraken and Whale lights appear!"
+        },
+        {
+          "type": "water_boost",
+          "multiplier": 10,
+          "description": "10x higher chance for water-themed lights"
+        }
+      ]
+    }
+  },
+  "time_periods": {
+    "Night": {
+      "icon": "🌙",
+      "hours": [0, 1, 2, 3, 4, 5, 18, 19, 20, 21, 22, 23],
+      "description": "The night is dark and full of mysteries...",
+      "exclusive_lights": ["Moonlight"],
+      "exclusive_boost": 25
+    },
+    "Morning": {
+      "icon": "🌅",
+      "hours": [6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17],
+      "description": "Dawn breaks, bringing new opportunities...",
+      "exclusive_lights": ["Sunrise"],
+      "exclusive_boost": 25
+    }
+  },
+  "null_potion_drop": {
+    "chance": 0.001,
+    "icon": "👾",
+    "message": "🎁 BONUS DROP! You found a Null Potion!"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "potions": {
+    "luck_potion_1": {
+      "name": "Luck I Potion",
+      "icon": "🧪",
+      "effect": {
+        "type": "luck_boost",
+        "amount": 25,
+        "duration": 60
+      },
+      "description": "+25% luck for 1 minute",
+      "price": 100
+    },
+    "luck_potion_2": {
+      "name": "Luck II Potion",
+      "icon": "💊",
+      "effect": {
+        "type": "luck_boost",
+        "amount": 35,
+        "duration": 300
+      },
+      "description": "+35% luck for 5 minutes",
+      "price": 400
+    },
+    "luck_potion_3": {
+      "name": "Luck III Potion",
+      "icon": "⚗️",
+      "effect": {
+        "type": "luck_boost",
+        "amount": 50,
+        "duration": 600
+      },
+      "description": "+50% luck for 10 minutes",
+      "price": 1000
+    },
+    "angelic_potion": {
+      "name": "Angelic Potion",
+      "icon": "✨",
+      "effect": {
+        "type": "instant_luck",
+        "amount": 200,
+        "duration": 0
+      },
+      "description": "+200% luck for next roll only",
+      "price": 5000
+    },
+    "null_potion": {
+      "name": "Null Potion",
+      "icon": "👾",
+      "effect": {
+        "type": "special_unlock",
+        "anomaly_unlock": true,
+        "duration": 0
+      },
+      "description": "Unlock Anomaly light for next roll (1 in ∞)",
+      "price": 999999,
+      "rarity": "drop_only",
+      "hidden": true
+    },
+    "blue_potion": {
+      "name": "Blue Potion",
+      "icon": "🔮",
+      "effect": {
+        "type": "luck_boost",
+        "amount": 100000,
+        "duration": 60
+      },
+      "description": "+100,000% luck for 1 minute (ULTIMATE!)",
+      "price": 999999,
+      "rarity": "legendary"
+    }
+  }
+}

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constellation Premium - Unlock the Stars</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Grotesk:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Stars Background -->
+    <div class="stars"></div>
+    <div class="stars2"></div>
+    <div class="stars3"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-text">CONSTELLATION</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#premium">Premium</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="glitch" data-text="CONSTELLATION PREMIUM">CONSTELLATION PREMIUM</h1>
+                <p class="tagline">Unlock the power of the cosmos. Ascend beyond limits.</p>
+                <div class="hero-buttons">
+                    <a href="#premium" class="btn btn-primary">
+                        <span>🚀 Get Premium Now</span>
+                    </a>
+                    <a href="https://t.me/YourBotUsername" class="btn btn-secondary" target="_blank">
+                        <span>📱 Open Bot</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Why Go Premium?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Monthly Coins</h3>
+                    <p>Get up to 200,000 coins every month to boost your progress massively</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🍀</div>
+                    <h3>Massive Luck Boost</h3>
+                    <p>Up to +500% permanent luck boost - dominate the rolls!</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌠</div>
+                    <h3>Exclusive Lights</h3>
+                    <p>Access to 3 exclusive legendary lights (get 2 random) - only for Pro members</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎁</div>
+                    <h3>Premium Rewards</h3>
+                    <p>Up to 300 luck potions monthly, 2x multipliers, and 30% shop discount</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Tiers -->
+    <section id="premium" class="premium-section">
+        <div class="container">
+            <h2 class="section-title">Choose Your Tier</h2>
+            <div class="tiers-container">
+                
+                <!-- Basic Tier -->
+                <div class="tier-card basic">
+                    <div class="tier-badge">🌟</div>
+                    <h3 class="tier-name">Constellation | Basic</h3>
+                    <div class="tier-price">
+                        <span class="currency">$</span>
+                        <span class="amount">1.99</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="tier-features">
+                        <li>✅ <strong>100,000 Monthly Coins</strong></li>
+                        <li>✅ <strong>150 Luck Potions/month</strong></li>
+                        <li>✅ <strong>+250% Permanent Luck Boost</strong></li>
+                        <li>✅ <strong>2x Coins & EXP Multiplier</strong></li>
+                        <li>✅ <strong>Permanent Auto-Roll</strong> (Always ON!)</li>
+                        <li>✅ Special Premium Title</li>
+                        <li>✅ Priority Support</li>
+                        <li class="disabled">❌ Exclusive Lights</li>
+                        <li class="disabled">❌ Light Preview</li>
+                        <li class="disabled">❌ Shop Discount</li>
+                    </ul>
+                    <button class="btn-tier" onclick="openPurchase('basic')">
+                        Select Basic - $1.99/mo
+                    </button>
+                </div>
+
+                <!-- Pro Tier -->
+                <div class="tier-card pro featured">
+                    <div class="featured-label">MOST POPULAR</div>
+                    <div class="tier-badge">⭐</div>
+                    <h3 class="tier-name">Constellation | Pro</h3>
+                    <div class="tier-price">
+                        <span class="currency">$</span>
+                        <span class="amount">3.99</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <div class="pro-highlight">🎉 2x ALL Basic Rewards!</div>
+                    <ul class="tier-features">
+                        <li>✅ <strong>200,000 Monthly Coins</strong> (2x Basic)</li>
+                        <li>✅ <strong>300 Luck Potions/month</strong> (2x Basic)</li>
+                        <li>✅ <strong>+500% Permanent Luck Boost</strong> (2x Basic)</li>
+                        <li>✅ <strong>2x Coins & EXP Multiplier</strong></li>
+                        <li>✅ <strong>Permanent Auto-Roll</strong> (Always ON!)</li>
+                        <li>✅ <strong>3 Exclusive Lights</strong> (Get 2 Random):</li>
+                        <li style="padding-left: 20px;">🌆 Cybernight</li>
+                        <li style="padding-left: 20px;">🎸 O'Sound</li>
+                        <li style="padding-left: 20px;">🎻 Remembrance</li>
+                        <li>✅ <strong>15% Drop During Heaven Approach</strong> ✨👼</li>
+                        <li>✅ <strong>New Light Preview Access</strong> 🔮</li>
+                        <li>✅ <strong>30% Shop Discount</strong> 💸</li>
+                        <li>✅ Elite Premium Title</li>
+                        <li>✅ Premium Support + Feature Suggestions</li>
+                    </ul>
+                    <button class="btn-tier pro-btn" onclick="openPurchase('pro')">
+                        Select Pro - $3.99/mo ⚡
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Exclusive Lights Showcase -->
+    <section class="exclusive-lights">
+        <div class="container">
+            <h2 class="section-title">Pro Exclusive Lights</h2>
+            <p class="section-subtitle">Only available to Pro Premium members during Heaven Approach event (✨👼 0.5% chance, 15% drop rate)</p>
+            <p class="section-subtitle"><strong>You will receive 2 random lights from these 3 upon purchase!</strong></p>
+            <div class="lights-showcase">
+                <div class="light-card">
+                    <div class="light-glow celestial"></div>
+                    <div class="light-icon">🌆</div>
+                    <h3>Cybernight</h3>
+                    <p class="light-rarity">1 in Exclusive</p>
+                </div>
+                <div class="light-card">
+                    <div class="light-glow astral"></div>
+                    <div class="light-icon">🎸</div>
+                    <h3>O'Sound</h3>
+                    <p class="light-rarity">1 in Exclusive</p>
+                </div>
+                <div class="light-card">
+                    <div class="light-glow galactic"></div>
+                    <div class="light-icon">🎻</div>
+                    <h3>Remembrance</h3>
+                    <p class="light-rarity">1 in Exclusive</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>🔄 How long does premium last?</h3>
+                    <p>Premium subscriptions last for 30 days from the date of activation. You'll receive a reminder before it expires!</p>
+                </div>
+                <div class="faq-item">
+                    <h3>💳 What payment methods do you accept?</h3>
+                    <p>We accept credit/debit cards, PayPal, and cryptocurrency payments for maximum convenience.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>⚡ How quickly is premium activated?</h3>
+                    <p>Premium activates instantly after payment confirmation. You'll receive all rewards immediately!</p>
+                </div>
+                <div class="faq-item">
+                    <h3>🎁 Do I keep rewards after premium expires?</h3>
+                    <p>Yes! Any coins, potions, and lights you obtain remain in your inventory permanently.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>⬆️ Can I upgrade from Basic to Pro?</h3>
+                    <p>Absolutely! Contact our support and we'll handle the upgrade smoothly with prorated pricing.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>🎁 Can I gift premium to friends?</h3>
+                    <p>Yes! During checkout, simply enter their Telegram User ID and we'll activate it for them.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Ascend?</h2>
+            <p>Join thousands of premium members dominating the leaderboards</p>
+            <a href="#premium" class="btn btn-primary btn-large">
+                <span>🚀 Get Premium Now</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>✨ Constellation</h4>
+                    <p>The ultimate Telegram RNG experience</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="https://t.me/YourBotUsername" target="_blank">Open Bot</a></li>
+                        <li><a href="#premium">Premium Plans</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="https://t.me/YourAdminUsername" target="_blank">Contact Admin</a></li>
+                        <li><a href="#" target="_blank">Support Group</a></li>
+                        <li><a href="#" target="_blank">Updates Channel</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Constellation RNG Bot. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Purchase Modal -->
+    <div id="purchaseModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePurchase()">&times;</span>
+            <h2>Complete Your Purchase</h2>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
