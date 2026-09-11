@@ -29,7 +29,7 @@ from commands.equip import equip_light_command, equip_gear_command, unequip_gear
 from commands.discard import discard_command, autodiscard_command
 from commands.use_potion import use_potion_command
 
-from handlers.callbacks import button_handler
+from handlers.callbacks import button_callback
 from handlers.server_callbacks import server_button_handler
 
 # Configure logging
